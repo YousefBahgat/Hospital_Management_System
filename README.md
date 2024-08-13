@@ -24,9 +24,9 @@ View doctor appointments and generate the bills, a feature for the receptionist 
 
 - the controllers are omitted in the UML diagram.
 
-- The ucanaccess folder contains  jar files  for Microsoft access connection(not available in  JDK).
-
 - the getters and setters are omitted in the UML diagram.
+
+- The ucanaccess folder contains  jar files  for Microsoft access connection(not available in  JDK).
 
 ## Libraries used for database connection:
 - import java.sql.Connection;
