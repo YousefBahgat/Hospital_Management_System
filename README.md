@@ -40,6 +40,11 @@ View doctor appointments and generate the bills, a feature for the receptionist 
 - import java.sql.Statement;
 
 
+## UML Diagram:
+
+![project uml](https://github.com/user-attachments/assets/9f2a7a93-0f2b-4b74-ac0b-1feb329caac1)
+
+
 
 
 
