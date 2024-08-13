@@ -16,17 +16,28 @@ View doctor appointments and generate the bills, a feature for the receptionist 
 
 
 ## Notes:
--The database used is Microsoft Access 2007.
+- The database used is Microsoft Access 2007.
 
--All the data of the system is modified  in  the database.
+- All the data of the system is modified  in  the database.
 
--the project contains 11 main classes(without controllers).
+- the project contains 11 main classes(without controllers).
 
--the controllers are omitted in the UML diagram.
+- the controllers are omitted in the UML diagram.
 
--The ucanaccess folder contains  jar files  for Microsoft access connection(not available in  JDK).
+- The ucanaccess folder contains  jar files  for Microsoft access connection(not available in  JDK).
 
--the getters and setters are omitted in the UML diagram.
+- the getters and setters are omitted in the UML diagram.
+
+## Libraries used for database connection:
+- import java.sql.Connection;
+
+- import java.sql.DriverManager;
+
+- import java.sql.PreparedStatement;
+
+- import java.sql.ResultSet;
+  
+- import java.sql.Statement;
 
 
 
