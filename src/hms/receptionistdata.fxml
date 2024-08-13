@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.ReceptionistdataController">
+   <children>
+      <ImageView fitHeight="476.0" fitWidth="603.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../b.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="32.0" layoutY="47.0" prefHeight="376.0" prefWidth="235.0" style="-fx-background-color: #888888;">
+         <children>
+            <Button layoutX="54.0" layoutY="95.0" mnemonicParsing="false" onAction="#Profile" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: white; -fx-effect: 32;" text="Profile" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="54.0" layoutY="155.0" mnemonicParsing="false" onAction="#IndoorPatients" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: white;" text="Indoor patients">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="54.0" layoutY="216.0" mnemonicParsing="false" onAction="#appointments" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: white;" text="Appointments">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutY="-4.0" prefHeight="56.0" prefWidth="235.0" style="-fx-background-color: #A4D8E9;" text="            Receptionist Portal">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="52.0" layoutY="277.0" mnemonicParsing="false" onAction="#changningPassword" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: white;" text="Change Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="75.0" layoutY="324.0" mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: white;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

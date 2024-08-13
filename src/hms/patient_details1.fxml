@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="737.0" style="-fx-background-color: #DEE2E7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.Patient_details1Controller">
+   <children>
+      <TabPane layoutY="-2.0" prefHeight="409.0" prefWidth="737.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Add Patient">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="52.0" prefWidth="737.0" style="-fx-background-color: #557BAB; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="58.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons8-sick-80.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="80.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" text="Add Patient" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="tid1" layoutX="86.0" layoutY="76.0" />
+                        <Label layoutX="24.0" layoutY="80.0" text="Patient ID:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="124.0" prefHeight="17.0" prefWidth="72.0" text="First Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfn1" layoutX="86.0" layoutY="120.0" />
+                        <Label layoutX="404.0" layoutY="124.0" prefHeight="17.0" prefWidth="85.0" text="Second Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tsn1" layoutX="489.0" layoutY="120.0" />
+                        <Label layoutX="50.0" layoutY="175.0" prefHeight="17.0" prefWidth="32.0" text="Age:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="439.0" layoutY="175.0" prefHeight="17.0" prefWidth="50.0" text="Gender:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ta1" layoutX="86.0" layoutY="171.0" />
+                        <TextField fx:id="tg1" layoutX="488.0" layoutY="171.0" />
+                        <Label layoutX="413.0" layoutY="222.0" prefHeight="17.0" prefWidth="66.0" text="Entry Date:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="222.0" prefHeight="17.0" prefWidth="93.0" text="Phone Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tpn1" layoutX="100.0" layoutY="218.0" prefHeight="25.0" prefWidth="134.0" />
+                        <TextField fx:id="ted1" layoutX="488.0" layoutY="218.0" />
+                        <Label layoutX="7.0" layoutY="274.0" prefHeight="17.0" prefWidth="86.0" text="Ward number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="392.0" layoutY="274.0" prefHeight="17.0" prefWidth="93.0" text="Room Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="twn1" layoutX="93.0" layoutY="270.0" prefHeight="25.0" prefWidth="141.0" />
+                        <TextField fx:id="tr1" layoutX="488.0" layoutY="270.0" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="7.0" layoutY="326.0" prefHeight="17.0" prefWidth="93.0" text="Bed Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tb1" layoutX="97.0" layoutY="322.0" prefHeight="25.0" prefWidth="137.0" />
+                        <Button layoutX="604.0" layoutY="63.0" mnemonicParsing="false" onAction="#AddPatients" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Delete Patient">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="52.0" prefWidth="737.0" style="-fx-background-color: #557BAB; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="58.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons8-sick-80.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="80.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" text="Delete Patient" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="tid2" layoutX="86.0" layoutY="63.0" />
+                        <Label layoutX="23.0" layoutY="67.0" text="Patient ID:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="422.0" layoutX="316.0" layoutY="102.0" startX="-318.0" stroke="#285ea1" />
+                        <Button layoutX="285.0" layoutY="63.0" mnemonicParsing="false" onAction="#SearchPatients2" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="18.0" layoutY="124.0" prefHeight="17.0" prefWidth="72.0" text="First Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfn2" editable="false" layoutX="86.0" layoutY="120.0" />
+                        <Label layoutX="404.0" layoutY="124.0" prefHeight="17.0" prefWidth="85.0" text="Second Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tsn2" editable="false" layoutX="489.0" layoutY="120.0" />
+                        <Label layoutX="47.0" layoutY="166.0" prefHeight="17.0" prefWidth="32.0" text="Age:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="166.0" prefHeight="17.0" prefWidth="50.0" text="Gender:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ta2" editable="false" layoutX="86.0" layoutY="162.0" />
+                        <TextField fx:id="tg2" editable="false" layoutX="488.0" layoutY="162.0" />
+                        <Label layoutX="413.0" layoutY="222.0" prefHeight="17.0" prefWidth="66.0" text="Entry Date:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="222.0" prefHeight="17.0" prefWidth="93.0" text="Phone Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tpn2" editable="false" layoutX="100.0" layoutY="218.0" prefHeight="25.0" prefWidth="134.0" />
+                        <TextField fx:id="ted2" editable="false" layoutX="488.0" layoutY="218.0" />
+                        <Label layoutX="7.0" layoutY="274.0" prefHeight="17.0" prefWidth="86.0" text="Ward number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="392.0" layoutY="274.0" prefHeight="17.0" prefWidth="93.0" text="Room Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="twn2" editable="false" layoutX="93.0" layoutY="270.0" prefHeight="25.0" prefWidth="141.0" />
+                        <TextField fx:id="tr2" editable="false" layoutX="488.0" layoutY="270.0" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="7.0" layoutY="326.0" prefHeight="17.0" prefWidth="93.0" text="Bed Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tb2" editable="false" layoutX="97.0" layoutY="322.0" prefHeight="25.0" prefWidth="137.0" />
+                        <Button layoutX="604.0" layoutY="63.0" mnemonicParsing="false" onAction="#DeletePatients" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Update Patient">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="52.0" prefWidth="737.0" style="-fx-background-color: #557BAB; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="58.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons8-sick-80.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="80.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" text="Update Patient" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="tid11" layoutX="86.0" layoutY="63.0" />
+                        <Label layoutX="23.0" layoutY="67.0" text="Patient ID:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="422.0" layoutX="316.0" layoutY="102.0" startX="-318.0" stroke="#285ea1" />
+                        <Button layoutX="285.0" layoutY="63.0" mnemonicParsing="false" onAction="#SearchPatients3" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="18.0" layoutY="124.0" prefHeight="17.0" prefWidth="72.0" text="First Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfn11" layoutX="86.0" layoutY="120.0" />
+                        <Label layoutX="404.0" layoutY="124.0" prefHeight="17.0" prefWidth="85.0" text="Second Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tsn11" layoutX="489.0" layoutY="120.0" />
+                        <Label layoutX="47.0" layoutY="166.0" prefHeight="17.0" prefWidth="32.0" text="Age:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="166.0" prefHeight="17.0" prefWidth="50.0" text="Gender:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ta11" layoutX="86.0" layoutY="162.0" />
+                        <TextField fx:id="tg11" layoutX="488.0" layoutY="162.0" />
+                        <Label layoutX="413.0" layoutY="222.0" prefHeight="17.0" prefWidth="66.0" text="Entry Date:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="222.0" prefHeight="17.0" prefWidth="93.0" text="Phone Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tpn11" layoutX="100.0" layoutY="218.0" prefHeight="25.0" prefWidth="134.0" />
+                        <TextField fx:id="ted11" layoutX="488.0" layoutY="218.0" />
+                        <Label layoutX="7.0" layoutY="274.0" prefHeight="17.0" prefWidth="86.0" text="Ward number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="392.0" layoutY="274.0" prefHeight="17.0" prefWidth="93.0" text="Room Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="twn11" layoutX="93.0" layoutY="270.0" prefHeight="25.0" prefWidth="141.0" />
+                        <TextField fx:id="tr11" layoutX="488.0" layoutY="270.0" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="7.0" layoutY="326.0" prefHeight="17.0" prefWidth="93.0" text="Bed Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tb11" layoutX="97.0" layoutY="322.0" prefHeight="25.0" prefWidth="137.0" />
+                        <Button layoutX="604.0" layoutY="63.0" mnemonicParsing="false" onAction="#UpdatePatients" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Search Patient ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="52.0" prefWidth="737.0" style="-fx-background-color: #557BAB; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="58.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons8-sick-80.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="80.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" text="Search Patient" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="tid" layoutX="86.0" layoutY="63.0" />
+                        <Label layoutX="23.0" layoutY="67.0" text="Patient ID:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="422.0" layoutX="316.0" layoutY="102.0" startX="-318.0" stroke="#285ea1" />
+                        <Button layoutX="578.0" layoutY="63.0" mnemonicParsing="false" onAction="#SearchPatients" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #557BAB;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="18.0" layoutY="124.0" prefHeight="17.0" prefWidth="72.0" text="First Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfn" editable="false" layoutX="86.0" layoutY="120.0" />
+                        <Label layoutX="404.0" layoutY="124.0" prefHeight="17.0" prefWidth="85.0" text="Second Name:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tsn" editable="false" layoutX="489.0" layoutY="120.0" />
+                        <Label layoutX="47.0" layoutY="166.0" prefHeight="17.0" prefWidth="32.0" text="Age:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="438.0" layoutY="166.0" prefHeight="17.0" prefWidth="50.0" text="Gender:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ta" editable="false" layoutX="86.0" layoutY="162.0" />
+                        <TextField fx:id="tg" editable="false" layoutX="488.0" layoutY="162.0" />
+                        <Label layoutX="413.0" layoutY="222.0" prefHeight="17.0" prefWidth="66.0" text="Entry Date:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="222.0" prefHeight="17.0" prefWidth="93.0" text="Phone Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tpn" editable="false" layoutX="100.0" layoutY="218.0" prefHeight="25.0" prefWidth="134.0" />
+                        <TextField fx:id="ted" editable="false" layoutX="488.0" layoutY="218.0" />
+                        <Label layoutX="7.0" layoutY="274.0" prefHeight="17.0" prefWidth="86.0" text="Ward number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="392.0" layoutY="274.0" prefHeight="17.0" prefWidth="93.0" text="Room Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="twn" editable="false" layoutX="93.0" layoutY="270.0" prefHeight="25.0" prefWidth="141.0" />
+                        <TextField fx:id="tr" editable="false" layoutX="488.0" layoutY="270.0" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="7.0" layoutY="326.0" prefHeight="17.0" prefWidth="93.0" text="Bed Number:" textFill="#557bab">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tb" editable="false" layoutX="97.0" layoutY="322.0" prefHeight="25.0" prefWidth="137.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="View Patient ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="413.0" prefWidth="692.0">
+                     <children>
+                        <VBox layoutX="5.0" layoutY="25.0" prefHeight="341.0" prefWidth="74.0">
+                           <children>
+                              <Label text="Patient ID">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="ID" prefHeight="322.0" prefWidth="80.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="79.0" layoutY="25.0" prefHeight="341.0" prefWidth="78.0">
+                           <children>
+                              <Label text="Entry_Date">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="ED" prefHeight="339.0" prefWidth="85.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="157.0" layoutY="25.0" prefHeight="341.0" prefWidth="63.0">
+                           <children>
+                              <Label text="bed_num">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="bednum" prefHeight="328.0" prefWidth="71.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="220.0" layoutY="25.0" prefHeight="341.0" prefWidth="81.0">
+                           <children>
+                              <Label text="First Name">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="FN" prefHeight="331.0" prefWidth="83.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="302.0" layoutY="25.0" prefHeight="341.0" prefWidth="92.0">
+                           <children>
+                              <Label text="Second Name">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="SN" prefHeight="333.0" prefWidth="108.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="394.0" layoutY="25.0" prefHeight="341.0" prefWidth="53.0">
+                           <children>
+                              <Label text="Gender">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="G" prefHeight="333.0" prefWidth="64.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="447.0" layoutY="25.0" prefHeight="341.0" prefWidth="85.0">
+                           <children>
+                              <Label text="Phone Num">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="PN" prefHeight="329.0" prefWidth="92.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="532.0" layoutY="25.0" prefHeight="341.0" prefWidth="74.0">
+                           <children>
+                              <Label text="Ward_num">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="WN" prefHeight="321.0" prefWidth="103.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="606.0" layoutY="25.0" prefHeight="341.0" prefWidth="17.0">
+                           <children>
+                              <Label text="Age">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="age" prefHeight="321.0" prefWidth="63.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="647.0" layoutY="25.0" prefHeight="341.0" prefWidth="84.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="85.0" text="Room_num">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="RM" prefHeight="321.0" prefWidth="63.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Pane layoutX="14.0" layoutY="397.0" onMousePressed="#returnhome" prefHeight="69.0" prefWidth="66.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="11.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons8-home-page-filled-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="47.0" text="Home" />
+         </children>
+      </Pane>
+      <Pane layoutX="99.0" layoutY="397.0" onMousePressed="#Logout" prefHeight="69.0" prefWidth="66.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="11.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons8-shutdown-48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="47.0" text="Logout" />
+         </children>
+      </Pane>
+      <Button layoutX="593.0" layoutY="421.0" mnemonicParsing="false" onAction="#ShowPatients" prefHeight="25.0" prefWidth="93.0" text="Show Patients" />
+   </children>
+</AnchorPane>
