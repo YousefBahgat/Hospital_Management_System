@@ -41,4 +41,4 @@ Receptionists have access to functionalities specific to their role:
 ## UML Diagram
 The UML diagram below outlines the core structure and relationships within the system, focusing on the main classes:
 
-![UML Diagram](UML Diagram.png)
+![UML Diagram](Image.png)
