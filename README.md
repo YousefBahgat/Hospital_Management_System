@@ -39,4 +39,6 @@ Receptionists have access to functionalities specific to their role:
   - Getter and setter methods.
 
 ## UML Diagram
-The UML diagram outlines the core structure and relationships within the system, focusing on the main classes.
+The UML diagram below outlines the core structure and relationships within the system, focusing on the main classes:
+
+![UML Diagram](image.png)
