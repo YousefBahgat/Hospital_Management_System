@@ -1,51 +1,42 @@
-# General idea: 
 
-The hospital management system isn’t  the complete system of the hospital, it covers the entire data of the employees, 
+# Hospital Management System
 
-patients' details, and booking appointments for the patients.
+## General Idea
+The **Hospital Management System** is a software project designed to manage employee data, patient details, and appointment bookings. It provides a streamlined interface for both administrative and reception tasks but is not a complete hospital system.
 
-# Project details:
+## Features
+### Admin Access
+Admins have extensive control over the system, including:
+- Managing employee data (doctors, nurses, and receptionists):
+  - Insert, update, or delete employee records.
+  - Edit salary details.
+- Accessing and modifying indoor patient details.
+- Editing or deleting patient data.
 
-There are two ways for accessing the system, as an admin and as a receptionist.
+### Receptionist Access
+Receptionists have access to functionalities specific to their role:
+- Viewing their profile.
+- Accessing indoor patient details (similar to admin).
+- Viewing doctor appointments.
+- Generating bills.
+- Changing their account password.
 
-- The admin can insert, update, and delete the data of a specific employee, such as doctors, nurses, and receptionists, also editing salary details,
-An admin can also access the indoor patient's details, and edit or delete the data.
+## Technical Details
+- **Database**: The system uses **Microsoft Access 2007** for data storage.
+- **Technology**: The UI is built using **JavaFX** and **SceneBuilder**.
+- **Database Connection**:
+  - `java.sql.Connection`
+  - `java.sql.DriverManager`
+  - `java.sql.PreparedStatement`
+  - `java.sql.ResultSet`
+  - `java.sql.Statement`
+- **Dependencies**: The `ucanaccess` folder includes JAR files for Microsoft Access database connection (not included in JDK).
 
-- The second way to access the system is as a receptionist, a receptionist can see his profile, access the indoor patient details like the admin,
-View doctor appointments and generate the bills, a feature for the receptionist is the capability of changing his password.
+## Development Notes
+- The project consists of **11 main classes** (excluding controllers).
+- UML diagrams omit:
+  - Controller classes.
+  - Getter and setter methods.
 
-
-## Notes:
-- The database used is Microsoft Access 2007.
-
-- All the data of the system is modified  in  the database.
-
-- the project contains 11 main classes(without controllers).
-
-- the controllers are omitted in the UML diagram.
-
-- the getters and setters are omitted in the UML diagram.
-
-- The ucanaccess folder contains  jar files  for Microsoft access connection(not available in  JDK).
-
-## Libraries used for database connection:
-- import java.sql.Connection;
-
-- import java.sql.DriverManager;
-
-- import java.sql.PreparedStatement;
-
-- import java.sql.ResultSet;
-  
-- import java.sql.Statement;
-
-
-## UML Diagram:
-
-![project uml](https://github.com/user-attachments/assets/9f2a7a93-0f2b-4b74-ac0b-1feb329caac1)
-
-
-
-
-
-
+## UML Diagram
+The UML diagram outlines the core structure and relationships within the system, focusing on the main classes.
